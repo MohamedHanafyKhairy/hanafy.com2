@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+body {
+    background-color: gray;
+    height: 100vh;
+
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-nav a:hover {
+    color: gray;
+}
+
+header {
+    background-color: rgb(253, 238, 36);
+    padding: 5px 10px;
+}
+
+.con-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    justify-content: space-between;
+}
+
+.con-header a {
+    text-decoration: none;
+}
+
+.con-header a h2 {
+    color: #fff;
+    font-size: 35px;
+
+}
+
+.con-header a span {
+    color: gray;
+}
+
+.Location {
+    display: flex;
+    align-items: center;
+}
+
+.Location i {
+    font-size: 25px;
+}
+
+.Location p {
+    color: gray;
+    margin-left: 4px;
+}
+
+.Location span {
+    color: black;
+}
+
+.Search-btn {
+    height: 36px;
+    width: 680.72px;
+    border-radius: 5px;
+    border: 0px;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.test {
+    padding: 2px 8px;
+}
+
+.test button {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.test i {
+    color: gray;
+}
+
+.test button:hover {
+    cursor: pointer;
+    color: gray;
+}
+
+nav {
+    background-color: #fff;
+    border: 1px solid gray;
+
+    ul {
+        display: flex;
+        padding: 10px 15px;
+
+        li {
+
+            margin: 0 35px;
+            list-style-type: none;
+        }
+    }
+
+    #offer {
+        color: red;
+    }
+}
+
+
+
+.carousel-image {
+    width: 2000px;
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+.Cir {
+    background-color: white;
+    display: flex;
+    height: 170px;
+    padding: 5px 20px;
+    margin-top: 40px;
+}
+
+.circ1 {
+    display: flex;
+}
+
+.Cir .cir1 {
+
+    margin: 10px 10px;
+    display: grid;
+    box-sizing: border-box;
+    position: relative;
+    padding: 0 15px;
+    margin-top: 6px;
+}
+
+.Cir .cir1 .img {
+    background-color: white;
+    clip-path: circle(50%);
+    height: 100px;
+    /* تعديل هنا لتحديد حجم الدائرة بشكل ثابت */
+    width: 100px;
+    /* تعديل هنا لتحديد حجم الدائرة بشكل ثابت */
+    box-sizing: border-box;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.Cir .cir1 .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 0px;
+}
+
+.Cir .cir1 .img p {
+    position: relative;
+    color: white;
+    z-index: 10;
+    margin-top: 0;
+}
+
+.main-divs {
+    padding: 20px 0px;
+    display: flex;
+}
+
+.main-div {
+    display: grid;
+}
+
+.movie {
+    width: 300px;
+    margin: 20px 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border-radius: 10px;
+    border: 2px solid gray;
+    padding: 5px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.movie:hover {
+    transform: scale(1.1);
+
+}
+
+.movie img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.movie-details {
+    padding: 15px;
+    text-align: center;
+}
+
+.movie-description {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.movie-footer {
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+}
+
+.Add-btn,
+.show-btn {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.Add-btn {
+    background-color: #09e609;
+    color: white;
+    transition: 0.5s;
+}
+
+.Add-btn:hover {
+    background-color: transparent;
+    color: #09e609;
+    border-color: #09e609;
+}
+
+.show-btn {
+    background-color: #2352c5;
+    color: white;
+}
+
+.show-btn:hover {
+    background-color: transparent;
+    color: #2352c5;
+    border-color: #2352c5;
+}
+
+.movie .div-header {
+    text-align: center;
+    font-size: 20px;
+}
+
+.div-words i {
+    font-size: 25px;
+}
+
+.btns {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    /* يجعل الـ btns أمام swiper-wrapper */
+}
+
+.btns button {
+    height: 100px;
+    width: 40px;
+    clip-path: circle(50% at center);
+    background-color: white;
+}
+
+.btns button:hover {
+    cursor: pointer;
+}
+
+.swiper-container {
+    position: relative;
+    /* يجعل swiper-container نسبيًا ليمكن وضع btns بناءً عليه */
+    width: 400%;
+    height: 40vh;
+}
+
+.swiper-wrapper {
+    display: flex;
+}
+
+.tests {
+
+    display: flex;
+}
+
+nav {
+    display: flex;
+}
+
+.site-footer {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    color: #666;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #000;
+}
+
+li:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+.IMG-CLASS:hover {
+    cursor: pointer;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    background-color: #ddd;
+    padding: 10px 0;
+}
